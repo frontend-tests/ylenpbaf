@@ -25,7 +25,7 @@
           </div>
           <input type="checkbox" id="nav-check">
           <div class="nav-links">
-            <label id="init" onclick="toggle_visibility('products');">INICIO</label>
+            <label onclick="displayProducts('products');">INICIO</label>
             <label class="dropdown">
               <div class="dropdown-button">
                 PRODUCTOS
@@ -38,14 +38,12 @@
               </ul>
             </label>
             <label>NOSOTROS</label>
-            <label>COMPRAS</label>
+            <label onmouseover="sidebarColor()" onmouseleave="sidebarColor()">COMPRAS</label>
           </div>
         </div>
       </nav>
       <section class="catalogue">
-        <div class="sidebar">
-
-        </div>
+        <div id="sidebar" class="sidebar"></div>
         <div id="products" class="products" style="display: block;">
           <div class="product"></div>
           <div class="product"></div>
@@ -57,12 +55,20 @@
       </section>
     </main>
     <script type="text/javascript">
-      function toggle_visibility(id) {
+      /* TOGGLE DISPLAY PRODUCTS */
+      function displayProducts(id) {
          var e = document.getElementById(id);
-         if(e.style.display == 'block')
-            e.style.display = 'none';
-         else
-            e.style.display = 'block';
+         if (e.style.display == 'block') {
+           e.style.display = 'none';
+         }
+         else {
+           e.style.display = 'block';
+         }
+      }
+      /* TOGGLE SIDEBAR COLOR */
+      function sidebarColor() {
+         var e = document.getElementById("sidebar");
+         e.classList.toggle("sidebar-colored");
       }
     </script>
   </body>

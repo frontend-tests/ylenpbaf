@@ -166,6 +166,9 @@ main	{
 	float: left;
 	position: relative;
 }
+.sidebar-colored {
+	background-color: var(--product-bg-color);
+}
 /* PRODUCTS */
 .products {
 	height: auto;
