@@ -72,7 +72,13 @@
       }
       /* CHANGE SIDEBAR CONTENT */
       function sidebarText() {
-         document.getElementById("sidebar").innerHTML = "<p class='sidebar-text'>Hola Mundo!</p>";
+        var e = document.getElementById("sidebar");
+        var text = "<p class='sidebar-text'>Hola Mundo!</p>";
+        if (e.innerHTML === "") {
+          e.innerHTML = text;
+        } else {
+          e.innerHTML = "";
+        }
       }
     </script>
   </body>
