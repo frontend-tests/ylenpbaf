@@ -44,6 +44,7 @@ table {
 		--product-bg-color: #f38c8d;
 		/* FONTS */
 		--navbar-title-color: #070004;
+		--sidebar-text-color: #070004;
 }
 /* INDEX */
 body {
@@ -165,9 +166,18 @@ main	{
 	background-color: var(--sidebar-bg-color);
 	float: left;
 	position: relative;
+	display: flex;
+	align-items: center;
 }
 .sidebar-colored {
 	background-color: var(--product-bg-color);
+}
+.sidebar-text {
+	width: 100%;	
+	color: var(--sidebar-text-color);
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
 }
 /* PRODUCTS */
 .products {
