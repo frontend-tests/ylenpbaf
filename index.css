@@ -1,0 +1,226 @@
+/* RESET */
+
+* {
+	border: 0;
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* VARIABLES */
+:root {
+		/* BACKGROUNDS */
+    --body-bg-color: #a7d9da;
+		--header-bg-color: #c04b82;
+		--logo-bg-color: #ffffff;
+		--navbar-bg-color: #f2a03d;
+		--sidebar-bg-color: #f33827;
+		--product-bg-color: #f38c8d;
+		/* FONTS */
+		--navbar-title-color: #070004;
+}
+/* INDEX */
+body {
+	background-color: var(--body-bg-color);
+}
+main	{
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 15px 20px 25px 20px;
+}
+.header {
+	height: auto;
+	min-height: 100px;
+	width: 100%;
+	background-color: var(--header-bg-color);
+	padding: 15px 20px;
+	margin-bottom: 10px;
+}
+.logo {
+	height: auto;
+	min-height: 70px;
+	width: 100%;
+	max-width: 225px;
+	background-color: var(--logo-bg-color);
+}
+/* NAVBAR */
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: var(--navbar-bg-color);
+  position: relative;
+	padding: 0px 20px;
+	margin-bottom: 10px;
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav > .nav-links {
+  display: inline;
+  float: left;
+	font-family: Arial;
+  font-size: 18px;
+}
+.nav > .nav-links > label {
+  color: var(--navbar-title-color);
+	cursor: pointer;
+  display: inline-block;
+  padding: 16px 10px 16px 10px;
+  text-decoration: none;
+	text-transform: uppercase;
+}
+.nav > #nav-check {
+  display: none;
+}
+/* DROPDOWN */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-button {
+  display: inline-block;
+  padding: 0px 30px 0px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.dropdown-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+.dropdown-input {
+  display: none;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+	padding: 0 10px 0 0;
+  list-style-type: none;
+}
+.dropdown-input + .dropdown-menu {
+  display: none;
+}
+.dropdown-input:checked + .dropdown-menu {
+	background-color: var(--navbar-bg-color);
+	display: block;
+	z-index: 1;
+}
+.dropdown-menu li {
+	padding: 10px 20px 10px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.dropdown-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+.dropdown-menu li.divider{
+  padding: 0;
+}
+/* CATALOGUE */
+.catalogue {
+	height: auto;
+	width: 100%;
+}
+/* SIDEBAR */
+.sidebar {
+	height: auto;
+	min-height: 360px;
+	width: 200px;
+	background-color: var(--sidebar-bg-color);
+	float: left;
+	position: relative;
+}
+/* PRODUCTS */
+.products {
+	height: auto;
+}
+.products > .product {
+	height: 170px;
+	width: 150px;
+	background-color: var(--product-bg-color);
+	float: left;
+	margin: 0 0 20px 20px;
+	position: relative;
+}
+/* MEDIA QUERIES */
+@media (max-width:600px) {
+	.nav {
+		z-index: 1;
+	}
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid var(--navbar-title-color);
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: var(--navbar-bg-color);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
