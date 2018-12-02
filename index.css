@@ -89,6 +89,7 @@ main	{
 	font-family: Arial;
   font-size: 18px;
 }
+.nav > .nav-links > a, 
 .nav > .nav-links > label {
   color: var(--navbar-title-color);
 	cursor: pointer;
@@ -173,7 +174,7 @@ main	{
 	background-color: var(--product-bg-color);
 }
 .sidebar-text {
-	width: 100%;	
+	width: 100%;
 	color: var(--sidebar-text-color);
 	font-family: Arial;
 	font-size: 18px;

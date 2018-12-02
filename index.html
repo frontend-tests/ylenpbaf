@@ -80,6 +80,31 @@
           e.innerHTML = "";
         }
       }
+      /* SUBMENU JS */
+      // var arr = [ {"id":"10", "class": "child-of-9"}, {"id":"11", "class": "child-of-10"}];
+      window.onload = function jsonMenu() {
+        var JSON = {
+          submenu: [
+            {titulo: 'Ropa', url: '/ropa.html'},
+            {titulo: 'Electronica', url: '/electronica.html'},
+            {titulo: 'Higiene', url: '/higiene.html'},
+            {titulo: 'Alimentos', url: '/alimentos.html'},
+            {titulo: 'Otros', url: '/otros.html'}
+          ]
+        }
+        // console.log(JSON.submenu[2].titulo+JSON.submenu[2].url);
+        for (i in JSON.submenu) {
+          console.log("<a href='"+JSON.submenu[i].url+"'>"+JSON.submenu[i].titulo+"</a>");
+          /*
+          var obj = JSON[i];
+          for (var key in obj){
+            var value = obj[key];
+            document.write("<br> - " + key + ": " + value);
+          }
+          */
+        }
+        // "<a href='JSON.submenu[id].url'>JSON.submenu[id].titulo</a>"
+      }
     </script>
   </body>
 </html>
