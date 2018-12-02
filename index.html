@@ -37,7 +37,7 @@
                 <li>Camperas</li>
               </ul>
             </label>
-            <label>NOSOTROS</label>
+            <label onclick="sidebarText()">NOSOTROS</label>
             <label onmouseover="sidebarColor()" onmouseleave="sidebarColor()">COMPRAS</label>
           </div>
         </div>
@@ -69,6 +69,10 @@
       function sidebarColor() {
          var e = document.getElementById("sidebar");
          e.classList.toggle("sidebar-colored");
+      }
+      /* TOGGLE DISPLAY PRODUCTS */
+      function sidebarText() {
+         document.getElementById("sidebar").innerHTML="Hola Mundo!";
       }
     </script>
   </body>
