@@ -8,7 +8,7 @@
  - [x] ~~By clicking on the "Start" button, all content items disappear~~
  - [x] ~~When hovering in the "Compras" button, change the color of the sidebar, and when doing mouseleave, return to the original color.~~
  - [x] ~~By clicking on the "Nosotros" button the text "Hola Mundo!" Will be added to the sidebar.~~
- - [x] ~~Generate the submenus for the "Productos" button by iterating the data of the attached arrays, both in php and in js.~~
+ - [x] ~~**Generate the submenus for the "Productos" button by iterating the data of the attached arrays, both in php and in js.**~~
 
 ### Prerequisites
 
