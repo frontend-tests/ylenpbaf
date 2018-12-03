@@ -10,8 +10,6 @@
  - [x] ~~By clicking on the "Nosotros" button the text "Hola Mundo!" Will be added to the sidebar.~~
  - [x] ~~Generate the submenus for the "Productos" button by iterating the data of the attached arrays, both in php and in js.~~
 
-Lay out the attachment "boceto_frontend.jpg" using an html file and another css file.
-
 ### Prerequisites
 
 **Docker**: https://docs.docker.com/install/
