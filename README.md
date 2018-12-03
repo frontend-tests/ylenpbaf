@@ -12,12 +12,15 @@
 
 ### Prerequisites
 
+**Git**:
+ > After the installation run `git version` to check the version.
+
 **Docker**: https://docs.docker.com/install/
 
 > After the installation run `docker version` to check the version.
 > Run `docker run hello-world` to verify that Docker can pull and run images.
 
-### Run
+### RunM
 After that, build your image:
 ```bash
 docker build -t ylenpbaf .
