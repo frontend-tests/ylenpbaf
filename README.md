@@ -1,4 +1,4 @@
-# Ylenpbaf test
+# Ylenpbaf frontend test
 
 ## To Do list:
 
@@ -20,7 +20,14 @@
 > After the installation run `docker version` to check the version.
 > Run `docker run hello-world` to verify that Docker can pull and run images.
 
-### RunM
+### Clone
+```bash
+git clone https://github.com/frontend-tests/ylenpbaf.git
+```
+```bash
+cd ylenpbaf
+```
+### Run
 After that, build your image:
 ```bash
 docker build -t ylenpbaf .
