@@ -22,7 +22,7 @@
     <meta name="theme-color" content="#a7d9da">
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/assets/css/index.css">
-    <title>Ylenpbaf test 2018</title>
+    <title>Ylenpbaf frontend test 2018</title>
   </head>
   <body>
     <main>
@@ -55,23 +55,20 @@
                 <li>Camperas</li>
                 <li><small>PHP menu</small></li>
                 <?php
-
-                require_once('functions.php');
-                $sub_menu = array(
-                    array('titulo' => 'Ropa', 'url' => '/ropa.html'),
-                    array('titulo' => 'Electronica', 'url' => '/electronica.html'),
-                    array('titulo' => 'Higiene', 'url' => '/higiene.html'),
-                    array('titulo' => 'Alimentos', 'url' => '/alimentos.html'),
-                    array('titulo' => 'Otros', 'url' => '/otros.html')
-                );
-
-                if (!empty($sub_menu)):
-                		print $sub_menu = wrapElement(array(
-                				'element' => 'ul',
-                				'content' => drawMenu($sub_menu)
-                		));
-                endif
-
+                  require_once('functions.php');
+                  $sub_menu = array(
+                      array('titulo' => 'Ropa', 'url' => '/ropa.html'),
+                      array('titulo' => 'Electronica', 'url' => '/electronica.html'),
+                      array('titulo' => 'Higiene', 'url' => '/higiene.html'),
+                      array('titulo' => 'Alimentos', 'url' => '/alimentos.html'),
+                      array('titulo' => 'Otros', 'url' => '/otros.html')
+                  );
+                  if (!empty($sub_menu)):
+                  		print $sub_menu = wrapElement(array(
+                  				'element' => 'ul',
+                  				'content' => drawMenu($sub_menu)
+                  		));
+                  endif
                 ?>
               </ul>
             </label>
