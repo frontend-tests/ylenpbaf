@@ -12,7 +12,7 @@
 
 ### Prerequisites
 
-**Git**:
+**Git**: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
  > After the installation run `git version` to check the version.
 
 **Docker**: https://docs.docker.com/install/
